@@ -1,0 +1,111 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-is-able-to-login;user-is-able-to-login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "User is able to login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1201069957
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "As a user, I am on the login page",
+            "match": {
+              "location": "tests/steps/login-steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2951704249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter valid username and valid password",
+            "match": {
+              "location": "tests/steps/login-steps.ts:13"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2402752917,
+              "error_message": "AssertionError: assert.fail()\n    at World.<anonymous> (/Users/primetech/cucumber-selenium-js/e2e/tests/steps/login-steps.ts:32:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click on login button",
+            "match": {
+              "location": "tests/steps/login-steps.ts:37"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should be on user profile page",
+            "match": {
+              "location": "tests/steps/login-steps.ts:42"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 190707
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@validlogin",
+            "line": 4
+          },
+          {
+            "name": "@smoketest",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-is-able-to-login",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "User is able to login",
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "uri": "tests/features/login.feature"
+  }
+]
